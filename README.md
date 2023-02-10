@@ -21,22 +21,25 @@ After installation, the shell can be used directly by typing "shell" anywhere in
     ls [flags] [dest]
 
 supported flags:
-1. -a   (list all files in directory)
-2. -l   (list files vertically)
-3. -d[0-3] (change default printing format, 0="ls", 1="ls -l", 2="ls-a", 3="ls -al")
+- -a   (list all files in directory)
+- -l   (list files vertically)
+- -d[0-3] (change default printing format, 0="ls", 1="ls -l", 2="ls-a", 3="ls -al")
 
 ### quick list of files in directory 
     l                           
-same as ls -l
+(same as ls -l)
 
 ### quick list of all files in directory 
     ll                          
-same as ls -al
+(same as ls -al)
 
 ### background and foreground commands
-    - bg [any_UNIX_command...]    ( command run in background with stdout redirected )
-    - fg [any_UNIX_command...]    ( command will run in foreground, like linux )
-    - [any_UNIX_command] [&/bg]      ( if [&/bg] is included, command runs in background )
+    - bg [any_UNIX_command...]    
+( command run in background with stdout redirected )
+    - fg [any_UNIX_command...]    
+( command will run in foreground, like linux )
+    - [any_UNIX_command] [&/bg]      
+( if [&/bg] is included, command runs in background )
 
 ### background running process 
     jobs                        ( prints out all background running process )
