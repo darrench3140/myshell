@@ -14,12 +14,12 @@ The installation process is very easy, with several simple commands:
 After installation, the shell can be used directly by typing "shell" anywhere in Linux. Have fun!
 
 # Commands
-1. change directory
-
+- change directory
     cd [dest]
-2. list directory 
+- list directory 
 
     ls [flags] [dest]
+
     supported flags:
     1. -a   (list all files in directory)
     2. -l   (list files vertically)
