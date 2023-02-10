@@ -1,7 +1,7 @@
 # Description
 This project is a shell that can run most UNIX commands and can be installed into your linux environment. There are also some add-on commands such as bg, fg, l, ll that are created and included in this shell.
 
-## Dependency
+### Dependency
 - sudo apt-get install libreadline-dev
 
 ## Installation Process
@@ -13,10 +13,12 @@ The installation process is very easy, with several simple commands:
 
 After installation, the shell can be used directly by typing "shell" anywhere in Linux. Have fun!
 
-# Redefined/Created Commands
-1. change directory 
+# Commands
+1. change directory
+
     cd [dest]
 2. list directory 
+
     ls [flags] [dest]
     supported flags:
     1. -a   (list all files in directory)
