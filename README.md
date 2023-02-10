@@ -36,8 +36,10 @@ supported flags:
 ### background and foreground commands
     - bg [any_UNIX_command...]    
 ( command run in background with stdout redirected )
+    
     - fg [any_UNIX_command...]    
 ( command will run in foreground, like linux )
+    
     - [any_UNIX_command] [&/bg]      
 ( if [&/bg] is included, command runs in background )
 
