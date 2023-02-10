@@ -1,7 +1,6 @@
 # Description
 This project is a shell that can run most UNIX commands and can be installed into your linux environment. There are also some add-on commands such as bg, fg, l, ll that are created and included in this shell.
 
-
 I personally use it often on AWS EC2 instances. After entering the instance with SSH in WSL, this shell just makes the terminal look way better.
 
 ### Dependency
