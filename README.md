@@ -9,9 +9,9 @@ I personally use it often on AWS EC2 instances. After entering the instance with
 ## Installation Process
 The installation process is very easy, with several simple commands:
 
-1. ./configure
-2. make
-3. sudo make install
+    ./configure
+    make
+    sudo make install
 
 After installation, the shell can be used directly by typing "shell" anywhere in Linux. Have fun!
 
