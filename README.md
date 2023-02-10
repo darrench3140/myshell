@@ -1,6 +1,9 @@
 # Description
 This project is a shell that can run most UNIX commands and can be installed into your linux environment. There are also some add-on commands such as bg, fg, l, ll that are created and included in this shell.
 
+
+I personally use it often on AWS EC2 instances. After entering the instance with SSH in WSL, this shell just makes the terminal look way better.
+
 ### Dependency
 - sudo apt-get install libreadline-dev
 
@@ -27,11 +30,11 @@ supported flags:
 
 ### quick list of files in directory 
     l                           
-(same as ls -l)
+( same as ls -l )
 
 ### quick list of all files in directory 
     ll                          
-(same as ls -al)
+( same as ls -al )
 
 ### background and foreground commands
     - bg [any_UNIX_command...]    
@@ -43,13 +46,13 @@ supported flags:
     - [any_UNIX_command] [&/bg]      
 ( if [&/bg] is included, command runs in background )
 
-### background running process 
+### show background process 
     jobs                        
 ( prints out all background running process )
 
 ### kill processes
-    kill [pid] [pid2...]        
-( kill process(es) )
+    kill [pids]        
+( kill processes )
 
 ### quit shell
     quit                        
