@@ -42,13 +42,16 @@ supported flags:
 ( if [&/bg] is included, command runs in background )
 
 ### background running process 
-    jobs                        ( prints out all background running process )
+    jobs                        
+( prints out all background running process )
 
 ### kill processes
-    kill [pid] [pid2...]        ( kill process(es) )
+    kill [pid] [pid2...]        
+( kill process(es) )
 
 ### quit shell
-    quit                        ( Ctrl C will not terminate the shell )
+    quit                        
+( Ctrl C will not terminate the shell )
 
 To be continued...
 
