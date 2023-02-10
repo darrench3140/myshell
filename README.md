@@ -19,16 +19,19 @@ After installation, the shell can be used directly by typing "shell" anywhere in
 
 ### list directory 
     ls [flags] [dest]
-    supported flags:
-    1. -a   (list all files in directory)
-    2. -l   (list files vertically)
-    3. -d[0-3] (change default printing format, 0="ls", 1="ls -l", 2="ls-a", 3="ls -al")
+
+supported flags:
+1. -a   (list all files in directory)
+2. -l   (list files vertically)
+3. -d[0-3] (change default printing format, 0="ls", 1="ls -l", 2="ls-a", 3="ls -al")
 
 ### quick list of files in directory 
-    l                           ( same as ls -l )
+    l                           
+same as ls -l
 
 ### quick list of all files in directory 
-    ll                          ( same as ls -al )
+    ll                          
+same as ls -al
 
 ### background and foreground commands
     - bg [any_UNIX_command...]    ( command run in background with stdout redirected )
