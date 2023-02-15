@@ -69,20 +69,25 @@ static inline void write_sys_message(char message[MAXBUF]) {
 // -------------------------------- //
 static inline void printCenter(const char *str, bool newLine) { printf("%*s%s", (int)((getColumn() - strlen(str))/2), "", str); if(newLine) printf("\n"); }
 void shell_init() {
-    clear(); printf(LIGHT_CYAN);
+    clear();
     char* username = getenv("USER"); int x = strlen(username);
-    for (int i = 0; i <= 16; i++) {
-        switch(i) {
-            case 0 ... 5: case 7: printCenter("*                  *", true); break;
-            case 6: printCenter("*   Initializing   *", true); break;
-            case 8: printCenter("********************", true); break;
-            case 9 ... 13: clearline(); printCenter("|", false); printf("\n"); printCenter("V", false); fflush(stdout); usleep(100000); break;
-            case 14: clearline(); printCenter("V", true); break;
-            case 15: printf(LIGHT_PURPLE "%*s%s\n" LIGHT_CYAN, (getColumn()+x+9)/2-x, "Welcome, ", username); break;
-            case 16: printCenter("----------- My Shell -----------", true); break;
-        }
-        usleep(50000);
-    } printf(NONE);
+    for (int i = 0; i <= 15; i++) {
+        printf(LIGHT_CYAN);
+        for (int j = i; j <= 16; j++) {
+            switch(j) {
+                case 0 ... 5: case 7: printCenter("*                  *", true); break;
+                case 6: printCenter("*   Initializing   *", true); break;
+                case 8: printCenter("********************", true); break;
+                case 9 ... 13: if (i==0) clearline(); printCenter("|", false); printf("\n"); if (i==0) {printCenter("V", false); fflush(stdout); usleep(100000);} break;
+                case 14: clearline(); printCenter("V", true); break;
+                case 15: printf(LIGHT_PURPLE "%*s%s\n" LIGHT_CYAN, (getColumn()+x+9)/2-x, "Welcome, ", username); break;
+                case 16: printCenter("----------- My Shell -----------", true); break;
+            }
+            if (i == 0) usleep(50000);
+        } printf(NONE);
+        if (i != 15) { usleep(50000); clear(); }
+    }
+
 }
 
 static inline bool checkDirectoryExist(char *path) {
